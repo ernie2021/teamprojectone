@@ -1,44 +1,5 @@
-
-/*
-=======
- 
-
-body {
-    background: black;
-    color:white;
-
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    height:40px ;
-}  
-
-ul {
-    display: flex;
-    text-decoration: none;
-}
-
-li {
-    width:80px
-}
-
-h1 { 
-    display: flex;
-    justify-content: center;
-
-}
-
-img {
-    width:100%;
-}
-
-div {
-    background: white;
-    margin: 40px;
-    width:300px;
-    height: 200px;
+#searchBar {
+  display: flex;
 }
 
 .outterbox {
@@ -103,3 +64,22 @@ img.responsive-img {
 body {
     background-color: rgb(48, 46, 46);
 }
+
+/*Watch page style*/
+#watchVideo {
+    width: 1280px;
+    height: 720px;
+    margin-top: 50px;
+}
+
+#mainWatchPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#description, #topDesc {
+    width: 100%;
+    margin: 0;
+}
+
