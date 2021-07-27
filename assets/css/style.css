@@ -1,45 +1,9 @@
-<<<<<<< HEAD
-/*
-=======
-
->>>>>>> e3fed0c8d09c44c765941468c92f46fdc8a6c3c8
-body {
-    background: black;
-    color:white;
-
-}
-
-nav {
+/*navigation style*/
+#searchBar {
     display: flex;
-    justify-content: space-between;
-    height:40px ;
-}  
-
-ul {
-    display: flex;
-    text-decoration: none;
 }
 
-li {
-    width:80px
-}
 
-h1 { 
-    display: flex;
-    justify-content: center;
-
-}
-
-img {
-    width:100%;
-}
-
-div {
-    background: white;
-    margin: 40px;
-    width:300px;
-    height: 200px;
-}
 
 .outterbox {
     display: flex;
