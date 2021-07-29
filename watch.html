@@ -16,17 +16,27 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-        <nav class="col s12 light-blue darken-3">
-            <ul>
-                      <li>HOME</li>
-                      <li>VIDEOS</li>
-                      <li>STATS</li>
-                      <li>shortCLIPS</li>
-                  </ul>
-                 
-                  <input type="text" placeholder="search" >
-           
-              </nav>
+    <nav class="light-blue darken-3">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo right"></a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./watch.html">VIDEO</a></li>
+            <li><a href="collapsible.html">STATS</a></li>
+            <li><a href="./links.html">LINKS</a></li>
+            <li><a href="collapsible.html">globalLEADERS</a></li>
+          </ul>           
+          
+          <div class="row" id="searchBar">
+            <div class="input-field col s6">
+              <input id="searchBarInput" type="text" class="validate">
+              <label class="active" for="searchBarInput">Search</label>
+            </div>
+          </div>
+       </div>
+    </div>
+</nav>
+   
 
               <main id="mainWatchPage">
                 <!--Video player-->
