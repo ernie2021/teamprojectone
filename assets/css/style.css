@@ -41,6 +41,15 @@ body {
     height: 100%;
 }
 
+/*Links page*/
+
+.cardOne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: inherit;
+
+}
     
 /*Footer style*/
 #footerNav {
