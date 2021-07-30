@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(24, 23, 23);
+    background-color: rgb(5, 5, 5);
     color: ghostwhite;
     font-family: 'Press Start 2P', cursive;    
     font-size: large;
@@ -21,7 +21,14 @@ body {
   background-color: ghostwhite;
 }
 
-
+main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
 
 
 .navtop input[type=text] {
@@ -58,6 +65,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: blueviolet;
+    border-width: 10px;
+    background-color: blueviolet;
 }
 
 
@@ -68,10 +78,14 @@ iframe {
 }
 
 iframe:hover {
-    box-shadow: 0px 0px 10px 4px rgb(210, 32, 255);
+    box-shadow: 0px 0px 10px 10px rgb(210, 32, 255);
     cursor: pointer;
     transition: 1s;
+    width: 500px;
+    height: 425px;
+    transition-duration: 1s;
 }
+
 
 .hero {
     margin-top: auto;
@@ -81,7 +95,7 @@ img.responsive-img {
     max-width: 100%;
     height: auto;
     margin-top: 69px;
-    border-radius: 150px;
+    border-radius: 50px;
     border-color: blueviolet;
     border-style: double;
     box-shadow: 0px 0px 10px 4px rgb(210, 32, 255);
@@ -107,6 +121,7 @@ img.responsive-img {
     margin: 0;
 }
 
+
  #linksbanner {
      width: 100%;
  }
@@ -123,4 +138,16 @@ img.responsive-img {
      height: 300px;
      overflow-wrap: normal;
  }
+ 
+ a {
+     color: white;
+ }
 
+ .description {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     align-content: center;
+ }
