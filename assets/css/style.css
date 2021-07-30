@@ -81,16 +81,29 @@ body {
     align-items: center;
 }
 
-#description, #topDesc {
+#description {
+    width: 1280px;
+    background-color: white;
+}
+
+#topDesc {
     width: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
-<<<<<<< HEAD
 
+#bottomDesc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+} #bottomDesc>* {
+    padding: 0 5px;
+}
 
-
-=======
+/*Links page*/
  #linksbanner {
      width: 100%;
  }
->>>>>>> ebc62c173d902146056e0e4544cb9c202206b5e1
