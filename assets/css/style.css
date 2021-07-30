@@ -116,16 +116,36 @@ img.responsive-img {
     align-items: center;
 }
 
-#description, #topDesc {
+#description {
+    width: 1280px;
+    background-color: white;
+}
+
+#topDesc {
     width: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
+<<<<<<< HEAD
+=======
+#bottomDesc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+} #bottomDesc>* {
+    padding: 0 5px;
+}
+
+/*Links page*/
+>>>>>>> 4f6e8100061a7e32863d0faab291d08f70d063f1
  #linksbanner {
      width: 100%;
  }
-
 
  .cardContainer {
      display: flex;
