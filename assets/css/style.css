@@ -102,15 +102,33 @@ img.responsive-img {
     align-items: center;
 }
 
-#description, #topDesc {
-    width: 100%;
-    margin: 0;
+#description {
+    width: 1280px;
+    background-color: white;
 }
 
+#topDesc {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#bottomDesc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+} #bottomDesc>* {
+    padding: 0 5px;
+}
+
+/*Links page*/
  #linksbanner {
      width: 100%;
  }
-
 
  .cardContainer {
      display: flex;
