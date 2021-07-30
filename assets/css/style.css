@@ -1,6 +1,35 @@
-#searchBar {
-  display: flex;
+body {
+    background-color: rgb(24, 23, 23);
+    color: ghostwhite;
+    font-family: 'Press Start 2P', cursive;    
+    font-size: large;
 }
+
+.logo {
+    width: 528px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+
+}
+
+.navtop {
+  overflow: hidden;
+  background-color: ghostwhite;
+}
+
+.navtop input[type=text] {
+    float: right;
+    padding: 1px;
+    border: solid;
+    margin-top: 8px;
+    font-size: 20px;
+
+}
+
 
 .outterbox {
     display: flex;
@@ -48,16 +77,13 @@ img.responsive-img {
     max-width: 100%;
     height: auto;
     margin-top: 69px;
-    border-radius: 200px;
+    border-radius: 150px;
     border-color: blueviolet;
     border-style: double;
     box-shadow: 0px 0px 10px 4px rgb(210, 32, 255);
     transition: 1s;
 }
 
-body {
-    background-color: rgb(48, 46, 46);
-}
 
 /*Watch page style*/
 #watchVideo {
@@ -76,12 +102,7 @@ body {
     width: 100%;
     margin: 0;
 }
-<<<<<<< HEAD
 
-
-
-=======
  #linksbanner {
      width: 100%;
  }
->>>>>>> ebc62c173d902146056e0e4544cb9c202206b5e1
