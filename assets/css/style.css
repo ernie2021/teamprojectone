@@ -27,7 +27,13 @@ ul {
     margin: auto;
 
 }
-
+ .container2 {
+     display: flex;
+     margin: 45px;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+ }
 .navtop {
   overflow: hidden;
   background-color: ghostwhite;
@@ -85,7 +91,7 @@ footer {
 
 
 .videoSelection {
-    margin: 5px;
+    margin:40px;
     cursor: pointer;
     width: 360px;
     height: 260px;
@@ -95,8 +101,8 @@ footer {
     box-shadow: 0px 0px 10px 10px rgb(210, 32, 255);
     cursor: pointer;
     transition: 1s;
-    width: 500px;
-    height: 425px;
+    width: 400px;
+    height: 325px;
     transition-duration: 1s;
 }
 
