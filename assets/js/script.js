@@ -7,10 +7,10 @@ for (let i = 0; i < videoSelectionEl.length; i++) {
     //preventing default
     event.preventDefault();
     //collecting dataset for query
-    var newCollection = element.dataset.collection;
+    var newCollection = element.dataset.document;
 
-    //set window.location to ./watch.html?collection={data-collection}
-    window.location = "./watch.html?collection=" + newCollection
+    //set window.location to ./watch.html?document={data-document}
+    window.location = "./watch.html?document=" + newCollection
 
   })
   
