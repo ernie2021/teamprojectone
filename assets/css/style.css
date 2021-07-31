@@ -33,7 +33,6 @@ ul {
     align-items: center;
     flex-direction: row;
     margin: auto;
-
 }
 
 .navtop {
@@ -163,6 +162,10 @@ img.responsive-img {
 
 }
 
+.pstyle {
+    color: white;
+}
+
 
 /*Watch page style*/
 #watchVideo {
@@ -192,10 +195,10 @@ img.responsive-img {
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .descright {
         position: relative;
-        left: -136px;
+        left: 40px;
         top: 9px;
         display: flex;
         justify-items: center;
