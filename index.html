@@ -71,7 +71,8 @@
             <div class="col s12">
                 <main>
                     <iframe class="ytplayer" width="360" height="260" src="https://www.youtube.com/embed/Ii16it-1cOo"
-                        title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        title="YouTube video player" frameborder="0" allowfullscreen data-collection="
+                        K2i8X3vlEUQxnDdTLqKj"></iframe>
                     <iframe class="ytplayer" width="360" height="260" src="https://www.youtube.com/embed/VUpNpRJ1EXo"
                         title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     <iframe class="ytplayer" width="360" height="260" src="https://www.youtube.com/embed/h9Zv_TiVzmg"
@@ -102,7 +103,34 @@
     </footer>
 
 
-    <script src="./assets/js/script.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCgxAMGS6NEheG5qis2ZjUxtkhSs324O-Q",
+    authDomain: "e-sports-roast.firebaseapp.com",
+    projectId: "e-sports-roast",
+    storageBucket: "e-sports-roast.appspot.com",
+    messagingSenderId: "400141272269",
+    appId: "1:400141272269:web:db081bed8def97aab55584",
+    measurementId: "G-ZDLESMJCLT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  //reference the database for future use
+  const db = firebase.firestore();
+  db.settings({ timestampsInSnapshots: true })
+</script>
+
+<script src="./assets/js/script.js"></script>
 
 </body>
 
