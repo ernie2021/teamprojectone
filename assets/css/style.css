@@ -1,8 +1,14 @@
+*,* {
+  margin: 0px;
+  padding: 0px;
+  
+}
+
 body {
     background-color: rgb(5, 5, 5);
     color: ghostwhite;
     font-family: 'Press Start 2P', cursive;    
-    font-size: large;
+    font-size: medium;
 }
 
 .logo {
@@ -91,6 +97,20 @@ iframe:hover {
     margin-top: auto;
 }
 
+.container {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
 img.responsive-img {
     max-width: 100%;
     height: auto;
@@ -100,6 +120,30 @@ img.responsive-img {
     border-style: double;
     box-shadow: 0px 0px 10px 4px rgb(210, 32, 255);
     transition: 1s;
+}
+
+.statspic {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    width: 300px;
+    height: 250px;
+    position: relative;
+    margin: auto;
+    padding: 10px;
+}
+
+.descright {
+   position: relative;
+   left: 444px;
+   top: -244px;
+   display: flex;
+   justify-items: center;
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-content: center;
+
 }
 
 
@@ -130,9 +174,23 @@ img.responsive-img {
     align-items: center;
 }
 
+@media screen and (max-width: 600px) {
+    .descright {
+        position: relative;
+        left: -136px;
+        top: 9px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;        
+    }
+}
 
-<<<<<<< HEAD
-=======
+
+
+
 #bottomDesc {
     display: flex;
     flex-direction: row;
@@ -142,7 +200,6 @@ img.responsive-img {
 }
 
 /*Links page*/
->>>>>>> 4f6e8100061a7e32863d0faab291d08f70d063f1
  #linksbanner {
      width: 100%;
  }
