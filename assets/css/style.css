@@ -4,6 +4,13 @@ body {
     font-family: 'Press Start 2P', cursive;    
     font-size: large;
 }
+p {
+    color: black;
+}
+
+.pcard:hover {
+    text-shadow: 0px 0px 6px rgb(147, 59, 230);
+}
 
 .logo {
     width: 528px;
@@ -131,8 +138,7 @@ img.responsive-img {
 }
 
 
-<<<<<<< HEAD
-=======
+
 #bottomDesc {
     display: flex;
     flex-direction: row;
@@ -142,20 +148,30 @@ img.responsive-img {
 }
 
 /*Links page*/
->>>>>>> 4f6e8100061a7e32863d0faab291d08f70d063f1
+
  #linksbanner {
      width: 100%;
  }
 
  .cardContainer {
      display: flex;
-     justify-content: space-between;
      flex-wrap: wrap;
+     justify-content: center;
+     font-size: 12px;
+     color: black;
+     margin-bottom:90px;
+     text-align: center;
  }
+
+.cardtitle {
+    font-size: 15px;
+   
+}
+
  #cards {
-     margin: 50px;
-     width: 300px;
-     height: 300px;
+     margin: 80px;
+     width: 450px;
+     height: 380px;
      overflow-wrap: normal;
  }
  
