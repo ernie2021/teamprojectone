@@ -1,7 +1,7 @@
 *,* {
   margin: 0px;
   padding: 0px;
-  
+
 }
 
 body {
@@ -9,6 +9,20 @@ body {
     color: ghostwhite;
     font-family: 'Press Start 2P', cursive;    
     font-size: medium;
+    /* font-family: 'Press Start 2P', cursive;     */
+    font-size: large;
+}
+p {
+    color: black;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pcard:hover {
+    text-shadow: 0px 0px 6px rgb(147, 59, 230);
 }
 
 .logo {
@@ -143,6 +157,7 @@ img.responsive-img {
    flex-direction: column;
    flex-wrap: nowrap;
    align-content: center;
+   color: white;
 
 }
 
@@ -163,6 +178,7 @@ img.responsive-img {
 #description {
     width: 1280px;
     background-color: white;
+    color: black;
 }
 
 #topDesc {
@@ -184,7 +200,8 @@ img.responsive-img {
         align-items: center;
         flex-direction: column;
         flex-wrap: nowrap;
-        align-content: center;        
+        align-content: center; 
+        color: white;       
     }
 }
 
@@ -200,19 +217,30 @@ img.responsive-img {
 }
 
 /*Links page*/
+
  #linksbanner {
      width: 100%;
  }
 
  .cardContainer {
      display: flex;
-     justify-content: space-between;
      flex-wrap: wrap;
+     justify-content: center;
+     font-size: 12px;
+     color: black;
+     margin-bottom:90px;
+     text-align: center;
  }
+
+.cardtitle {
+    font-size: 15px;
+   
+}
+
  #cards {
-     margin: 50px;
-     width: 300px;
-     height: 300px;
+     margin: 80px;
+     width: 450px;
+     height: 380px;
      overflow-wrap: normal;
  }
  
