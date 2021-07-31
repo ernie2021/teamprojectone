@@ -1,7 +1,7 @@
 body {
     background-color: rgb(5, 5, 5);
     color: ghostwhite;
-    font-family: 'Press Start 2P', cursive;    
+    /* font-family: 'Press Start 2P', cursive;     */
     font-size: large;
 }
 
@@ -119,6 +119,7 @@ img.responsive-img {
 #description {
     width: 1280px;
     background-color: white;
+    color: black;
 }
 
 #topDesc {
@@ -131,8 +132,6 @@ img.responsive-img {
 }
 
 
-<<<<<<< HEAD
-=======
 #bottomDesc {
     display: flex;
     flex-direction: row;
@@ -142,7 +141,6 @@ img.responsive-img {
 }
 
 /*Links page*/
->>>>>>> 4f6e8100061a7e32863d0faab291d08f70d063f1
  #linksbanner {
      width: 100%;
  }
