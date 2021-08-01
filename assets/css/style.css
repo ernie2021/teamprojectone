@@ -94,6 +94,7 @@ footer {
     border: blueviolet;
     border-width: 25px;
     height: 100px;
+    width: 100%;
     background-color: blueviolet;
     padding-top: 30px;
 }
@@ -131,11 +132,7 @@ footer {
 }
 
 .profile {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
-    align-content: center;
+    margin-left: 30%;
 }
 
 img.responsive-img {
@@ -226,20 +223,6 @@ img.responsive-img {
     align-items: center;
 }
 
-@media screen and (max-width: 800px) {
-    .descright {
-        position: relative;
-        left: 40px;
-        top: 9px;
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center; 
-        color: white;       
-    }
-}
 
 
 
@@ -292,3 +275,58 @@ img.responsive-img {
      flex-wrap: nowrap;
      align-content: center;
  }
+
+ /*test css for stats  */
+ .maxcontainer {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     width:100% ;
+    height: 100%;
+}
+    
+ 
+
+ .boxone {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: flex-end;
+     
+
+ }
+
+ 
+
+
+
+ .descright1 {
+     color: white;
+ }
+
+ @media screen and (max-width: 1300px) {
+   
+
+    .profile {
+        margin-left: 50%;
+    }
+    
+    .descright1 {
+        color: white;
+        text-align: center;
+        margin-left:50%;
+    }
+ .boxone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    
+
+}
+
+
+}
