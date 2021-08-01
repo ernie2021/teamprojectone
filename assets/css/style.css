@@ -13,19 +13,34 @@ body {
     font-size: small;
     overflow-x: hidden;
 }
+
+
 p {
     color: black;
 }
 
 ul {
-    display: flex;
-    justify-content: space-around;
+   
+}
+
+.logoside {
+    width: 350px;
+    height: 200px;
+    background-color: black;
+    align-content: center;
+    justify-items: center;
+    padding-right: 50px;
+}
+
+.sidenav {
+    font-size: small;
 }
 
 .pcard:hover {
     text-shadow: 0px 0px 6px rgb(147, 59, 230);
 }
 
+/* --------*/
 .logo {
     width: 528px;
     height: 270px;
@@ -42,6 +57,7 @@ ul {
      align-content: center;
      align-items: center;
  }
+
 .navtop {
   overflow: hidden;
   background-color: ghostwhite;
@@ -67,7 +83,7 @@ main {
 }
 
 
-
+/* -------- */
 .outterbox {
     display: flex;
     flex-direction:row;
@@ -99,7 +115,7 @@ footer {
 }
 
 
-
+/* video grid on the homepage */
 .videoSelection {
     margin:40px;
     cursor: pointer;
@@ -124,6 +140,8 @@ footer {
     margin-top: auto;
 }
 
+
+/* All containers */
 .container {
     display: flex;
     justify-items: center;
@@ -138,6 +156,8 @@ footer {
     align-content: center;
 }
 
+
+/* all images */
 img.responsive-img {
     max-width: 100%;
     height: auto;
@@ -149,6 +169,8 @@ img.responsive-img {
     transition: 1s;
 }
 
+
+/* Stats page top banner */
 .statspic {
     display: flex;
     justify-content: left;
@@ -160,6 +182,7 @@ img.responsive-img {
     padding: 10px;
 }
 
+/* Descriptions on the stats  page */
 .descright {
    position: relative;
    left: 444px;
@@ -226,6 +249,7 @@ img.responsive-img {
     align-items: center;
 }
 
+/* Media querie for the stats page descriptions */
 @media screen and (max-width: 800px) {
     .descright {
         position: relative;
@@ -240,6 +264,12 @@ img.responsive-img {
         color: white;       
     }
 }
+
+@media screen and (max-width: 993px) {
+    .hidenav {
+        display: none;
+    }
+
 
 
 
@@ -284,6 +314,7 @@ img.responsive-img {
      color: white;
  }
 
+ /* Descrioption on the home page under the banner */
  .description {
      display: flex;
      justify-content: center;
@@ -292,3 +323,4 @@ img.responsive-img {
      flex-wrap: nowrap;
      align-content: center;
  }
+}
