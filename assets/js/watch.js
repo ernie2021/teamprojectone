@@ -13,8 +13,8 @@ docRef.get().then(function(doc) {
   if (doc.exists) {
     console.log("Document data:", doc.data());
     //set video url
-    videoPlayerEl.innerHTML = doc.data().URL
-    console.log(doc.data().URL)
+    videoPlayerEl.innerHTML = doc.data().Url
+    console.log(doc.data().Url)
 
     //set description
     //set flames
