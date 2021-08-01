@@ -10,9 +10,14 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!---javascript function for mini sidenav menu-->
+  <script src="./assets/js/sidenav.js" defer></script>
+
   <title>Home</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -22,21 +27,32 @@
 
   <header>
     <img class="logo" src="./assets/images/esportroast.png"/>
-    <nav class="purple darken-2">
+    <nav class="purple darken-2" style="padding: 0px 10px;">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo right"></a>
-            <ul id="nav-mobile">
+            <a href="#" class="brand-logo left"></a>
+
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </a>
+
+            <ul class="hidenav">
                 <li><a href="./index.html">HOME</a></li>
                 <li><a href="./watch.html">VIDEO</a></li>
                 <li><a href="./stats.html">STATS</a></li>
                 <li><a href="./links.html">LINKS</a></li>
                 <li><a href="./globalleaders.html">globalLEADERS</a></li>
             </ul>
-
-            
-        </div>
-        </div>
+          
+          </div>
     </nav>
+
+    <ul class="sidenav" id="mobile-demo"> <img class="logoside" src="./assets/images/esportroast.png"/>
+
+                 <li><a href="./index.html">HOME</a></li>
+                <li><a href="./watch.html">VIDEO</a></li>
+                <li><a href="./stats.html">STATS</a></li>
+                <li><a href="./links.html">LINKS</a></li>
+                <li><a href="./globalleaders.html">globalLEADERS</a></li>
+    </ul>
 </header>
     
 <div class="container">
@@ -109,7 +125,6 @@
       <li><a href="./globalleaders.html">GlobalLeaders </a></li>
     </ul>
     <p><i class="fa fa-copyright " aria-hidden="true">CopyRight 2021</i></p>
-  </div>
     <p>Website created by Ernesto Garcia, Jesus Perea, Parth Bhatt, and Daniel Stark</p>
 
   </footer>
