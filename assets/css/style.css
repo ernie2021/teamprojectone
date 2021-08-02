@@ -201,8 +201,8 @@ img.responsive-img {
 
 /*Watch page style*/
 #watchVideo {
-    width: 880px;
-    height: 620px;
+    width: 1290px;
+    height: 730px;
     margin-top: 50px;
     margin-bottom: 20px;
     border: blueviolet;
@@ -211,11 +211,11 @@ img.responsive-img {
 }
 
 #watchVideo:hover {
-    box-shadow: 0px 0px 10px 10px rgb(210, 32, 255);
+    box-shadow: 0px 0px 10px 10px rgb(210 32 255);
     cursor: pointer;
     transition: 1s;
-    width: 900px;
-    height: 650px;
+    width: 1290px;
+    height: 730px;
     transition-duration: 1s;
 }
 
@@ -244,6 +244,11 @@ img.responsive-img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 35px;
+}
+
+#mainDescription {
+    font-size: 20px;
 }
 
 
