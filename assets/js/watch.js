@@ -9,6 +9,8 @@ var viewsLikesEl = document.querySelector("#bottomDesc").children
 var topDescriptionEl = document.querySelector("#topDesc")
 //variable for likes
 var flamesVar = 0;
+//variable for views
+var viewsVar = 0;
 //selecting the flames button
 var flamesButtonEl = document.querySelector("#flamesButton")
   //getting query from url
@@ -22,6 +24,16 @@ var docRef = db.collection("Videos").doc(documentFromUrl);
 docRef.get().then(function(doc) {
   if (doc.exists) {
     console.log("Document data:", doc.data());
+    //setting viewsvar
+    viewsVar = doc.data().Views
+    //itterating views
+    viewsVar++
+    //updating views in database
+    docRef.update({
+      Views: viewsVar
+    })
+    //updating viewsEl
+    viewsLikesEl[0].textContent = "Likes: " + viewsVar
     //set video url
     videoPlayerEl.innerHTML = doc.data().Url
     //set description
@@ -32,8 +44,6 @@ docRef.get().then(function(doc) {
     viewsLikesEl[1].textContent = "Flames: " + flamesVar
     //set user
     topDescriptionEl.querySelector("h3").textContent = "Submitted by: " + doc.data().User
-    //set views
-    viewsLikesEl[0].textContent = "Views: " + doc.data().Views
   } else {
     console.log("No such document!");
   }
