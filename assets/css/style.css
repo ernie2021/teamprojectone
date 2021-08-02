@@ -107,6 +107,7 @@ footer {
     border: blueviolet;
     border-width: 25px;
     height: 100px;
+    width: 100%;
     background-color: blueviolet;
 }
 
@@ -145,9 +146,7 @@ footer {
 
 .profile {
     display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
     align-content: center;
 }
 
@@ -199,8 +198,8 @@ img.responsive-img {
 
 /*Watch page style*/
 #watchVideo {
-    width: 880px;
-    height: 620px;
+    width: 1290px;
+    height: 730px;
     margin-top: 50px;
     margin-bottom: 20px;
     border: blueviolet;
@@ -209,11 +208,11 @@ img.responsive-img {
 }
 
 #watchVideo:hover {
-    box-shadow: 0px 0px 10px 10px rgb(210, 32, 255);
+    box-shadow: 0px 0px 10px 10px rgb(210 32 255);
     cursor: pointer;
     transition: 1s;
-    width: 900px;
-    height: 650px;
+    width: 1290px;
+    height: 730px;
     transition-duration: 1s;
 }
 
@@ -242,52 +241,20 @@ img.responsive-img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 35px;
 }
 
-/* Media querie for the stats page descriptions */
-@media screen and (max-width: 800px) {
-    .descright {
-        position: relative;
-        left: 40px;
-        top: 9px;
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center; 
-        color: white;       
-    }
+#mainDescription {
+    font-size: 20px;
 }
+
+
 
 @media screen and (max-width: 993px) {
     .hidenav {
         display: none;
     }
 
-@media screen and (max-width: 412px) {
-    #watchVideo {
-        width: 380px;
-        height: 220px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-        border: blueviolet;
-        border-style: solid;
-        border-width: 5px;
-    }
-}
-
-@media screen and (max-width: 412px) {
-    #description {
-        width: 380px;
-        background-color: white;
-        color: black;
-        margin-bottom: 25px;
-        border: blueviolet;
-        border-style: solid;
-        border-width: 5px;
-        padding: 10px;
-    }
 }
 
 @media screen and (max-width: 412px) {
@@ -348,5 +315,21 @@ img.responsive-img {
      flex-wrap: nowrap;
      align-content: center;
  }
-}
- 
+
+ @media screen and (max-width: 885px) {
+     .descright {
+        position: relative;
+        left: -15px;
+        top: 23px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        color: white;
+        margin-bottom: 10%;
+     }
+ }
+     
+
