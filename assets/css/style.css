@@ -4,7 +4,7 @@
 
 }
 
-body {
+html, body {
     background-color: rgb(5, 5, 5);
     color: ghostwhite;
     font-family: 'Press Start 2P', cursive;    
@@ -14,22 +14,19 @@ body {
     overflow-x: hidden;
 }
 
-
 p {
     color: black;
 }
 
-ul {
-   
-}
+
 
 .logoside {
-    width: 350px;
+    width: 400px;
     height: 200px;
     background-color: black;
     align-content: center;
     justify-items: center;
-    padding-right: 50px;
+    padding-right: 100px;
 }
 
 .sidenav {
@@ -111,9 +108,7 @@ footer {
     border-width: 25px;
     height: 100px;
     background-color: blueviolet;
-    padding-top: 30px;
 }
-
 
 /* video grid on the homepage */
 .videoSelection {
@@ -230,7 +225,7 @@ img.responsive-img {
 }
 
 #description {
-    width: 1280px;
+    width: 800px;
     background-color: white;
     color: black;
     margin-bottom: 25px;
@@ -270,9 +265,38 @@ img.responsive-img {
         display: none;
     }
 
+@media screen and (max-width: 412px) {
+    #watchVideo {
+        width: 380px;
+        height: 220px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        border: blueviolet;
+        border-style: solid;
+        border-width: 5px;
+    }
+}
 
+@media screen and (max-width: 412px) {
+    #description {
+        width: 380px;
+        background-color: white;
+        color: black;
+        margin-bottom: 25px;
+        border: blueviolet;
+        border-style: solid;
+        border-width: 5px;
+        padding: 10px;
+    }
+}
 
-
+@media screen and (max-width: 412px) {
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+    
+}
 
 #bottomDesc {
     display: flex;
@@ -284,7 +308,7 @@ img.responsive-img {
 
 /*Links page*/
 
- #linksbanner {
+#linksbanner {
      width: 100%;
  }
 
@@ -315,6 +339,7 @@ img.responsive-img {
  }
 
  /* Descrioption on the home page under the banner */
+
  .description {
      display: flex;
      justify-content: center;
@@ -324,3 +349,4 @@ img.responsive-img {
      align-content: center;
  }
 }
+ 
