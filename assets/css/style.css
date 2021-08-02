@@ -267,3 +267,31 @@ img.responsive-img {
      flex-wrap: nowrap;
      align-content: center;
  }
+
+ /*Global Leaders page*/
+
+.uparrow {
+    width: 100px;
+    height: 150px;
+    margin-top: 50px;
+}
+
+.downarrow {
+    width: 100px;
+    height: 150px;
+    margin-top: 50px;
+}
+
+.custom-leaders {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: white;
+    align-content: center;
+}
+
+.usernames {
+    color: white;
+}
