@@ -7,6 +7,10 @@ var mainDescriptionEl = document.querySelector("#mainDescription")
 var viewsLikesEl = document.querySelector("#bottomDesc").children
 //selecting the top description
 var topDescriptionEl = document.querySelector("#topDesc")
+//variable for likes
+var flamesVar = 0;
+//selecting the flames button
+var flamesButtonEl = document.querySelector("#flamesButton")
   //getting query from url
 var searchQuery = window.location.search
 //parsing the search for the collection
@@ -22,8 +26,10 @@ docRef.get().then(function(doc) {
     videoPlayerEl.innerHTML = doc.data().Url
     //set description
     mainDescriptionEl.textContent = doc.data().Description
+    //set flamesVar
+    flamesVar = doc.data().Flames
     //set flames
-    viewsLikesEl[1].textContent = "Flames: " + doc.data().Flames
+    viewsLikesEl[1].textContent = "Flames: " + flamesVar
     //set user
     topDescriptionEl.querySelector("h3").textContent = "Submitted by: " + doc.data().User
     //set views
@@ -35,9 +41,34 @@ docRef.get().then(function(doc) {
   console.log("Error getting document:", error)
 })
 
-//in firebase
-  //pull the likes data
-  //pull the dislikes data
-  //pull the views data
-  //pull the video source url
+flamesButtonEl.addEventListener("click", function(element) {
+  if (flamesButtonEl.dataset.state == "notSelected") {
+    //prevent default
+    element.preventDefault()
+    //change data-state to selected
+    flamesButtonEl.dataset.state = "selected"
+    //itterate the flames
+    flamesVar++
+    //set flames in database
+    docRef.update({
+      Flames: flamesVar
+    })
+    //set flamesEl
+    viewsLikesEl[1].textContent = "Flames: " + flamesVar
+  } else if (flamesButtonEl.dataset.state == "selected") {
+    //prevent default
+    element.preventDefault()
+    //change data-state to notSelected
+    flamesButtonEl.dataset.state = "notSelected"
+    //de-itterate flames
+    flamesVar--
+    //set flames in database
+    docRef.update({
+      Flames: flamesVar
+    })
+    //set flamesEl
+    viewsLikesEl[1].textContent = "Flames: " + flamesVar
+  }
 
+
+})
