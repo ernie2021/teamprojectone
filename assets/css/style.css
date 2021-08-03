@@ -316,6 +316,33 @@ img.responsive-img {
      align-content: center;
  }
 
+ /*Global Leaders page*/
+
+.uparrow {
+    width: 100px;
+    height: 150px;
+    margin-top: 50px;
+}
+
+.downarrow {
+    width: 100px;
+    height: 150px;
+    margin-top: 50px;
+}
+
+.custom-leaders {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: white;
+    align-content: center;
+}
+
+.usernames {
+    color: white;
+}
  @media screen and (max-width: 885px) {
      .descright {
         position: relative;
@@ -331,6 +358,7 @@ img.responsive-img {
         margin-bottom: 10%;
      }
  }
+
      
 
 
@@ -356,4 +384,5 @@ img.responsive-img {
 
 
 }
+
 
