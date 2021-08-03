@@ -118,11 +118,11 @@ footer {
     margin-top: auto;
 }
 
-.container {
+/* .container {
     display: flex;
     justify-items: center;
     align-items: center;
-}
+} */
 
 .profile {
     display: flex;
@@ -269,8 +269,15 @@ img.responsive-img {
  }
 
  /*Global Leaders page*/
+ .contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom:90px;
+    text-align: center;
+}
 
-.uparrow {
+ .uparrow {
     width: 100px;
     height: 150px;
     margin-top: 50px;
@@ -294,4 +301,38 @@ img.responsive-img {
 
 .usernames {
     color: white;
+}
+
+
+@media screen and (max-width: 800px) {
+    h1 { 
+        font-size: 1.5rem;
+    }
+    .uparrow {
+        width: 100px;
+        height: 150px;
+
+    }
+    .downarrow {
+        width: 100px;
+        height: 150px;
+    }
+    .profile {
+        width: 400px;
+        height: 417px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .uparrow {
+        width: 75px;
+        height: 100px;
+    }
+    .downarrow {
+        width: 75px;
+        height: 100px;
+    }
+    .profile {
+        width: 300px;
+        height: 325px;
+    }
 }
