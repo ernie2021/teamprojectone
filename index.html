@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>Home</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-
-<body style="font-family: Press Start 2P" >
-<header>
-    <img class="logo" src="./assets/images/esportroast.png"/>
-    <nav class="purple darken-2">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo right"></a>
-            <ul id="nav-mobile">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./watch.html">VIDEO</a></li>
-                <li><a href="./stats.html">STATS</a></li>
-                <li><a href="./links.html">LINKS</a></li>
-                <li><a href="./globalleaders.html">globalLEADERS</a></li>
-            </ul>
-
-            
-        </div>
-        </div>
-    </nav>
-</header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+      
+        <!---javascript function for mini sidenav menu-->
+        <script src="./assets/js/sidenav.js" defer></script>
+      
+        <title>ESportRoast</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+      </head>
+      
+      
+      <body style="font-family: Press Start 2P" "cursive; sans-serfif">
+      
+        <header>
+        <a href="./index.html">
+          <img class="logo" src="./assets/images/esportroast.png"/></a>
+          <nav class="purple darken-2" style="padding: 0px 10px;">
+              <div class="nav-wrapper">
+                  <a href="#" class="brand-logo left"></a>
+      
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  </a>
+      
+                  <ul class="hidenav">
+                      <li><a href="./index.html">HOME</a></li>
+                      <li><a href="./watch.html">VIDEO</a></li>
+                      <li><a href="./stats.html">STATS</a></li>
+                      <li><a href="./links.html">LINKS</a></li>
+                      <li><a href="./globalleaders.html">globalLEADERS</a></li>
+                  </ul>
+                
+                </div>
+          </nav>
+      
+          <ul class="sidenav" id="mobile-demo"> <img class="logoside" src="./assets/images/esportroast.png"/>
+      
+                       <li><a href="./index.html">HOME</a></li>
+                      <li><a href="./watch.html">VIDEO</a></li>
+                      <li><a href="./stats.html">STATS</a></li>
+                      <li><a href="./links.html">LINKS</a></li>
+                      <li><a href="./globalleaders.html">globalLEADERS</a></li>
+          </ul>
+      </header>
 
 
     <!--Picture for banner full width desktop, tablet and mobile size-->
@@ -66,12 +84,12 @@
         <div class="row">
             <div class="col s12">
                 <main>
-                    <img src="https://i.ytimg.com/vi_webp/Ii16it-1cOo/sddefault.webp" alt="" data-collection="K2i8X3vlEUQxnDdTLqKj" class="videoSelection">
-                    <img src="https://i.ytimg.com/vi_webp/VUpNpRJ1EXo/sddefault.webp" alt="" data-collection="wUBBF2zgCDHE1mAPPGWl" class="videoSelection">
-                    <img src="https://i.ytimg.com/vi_webp/h9Zv_TiVzmg/sddefault.webp" alt="" data-collection="GvtshyhbfKUcMwetgPOU" class="videoSelection">
-                    <img src="https://i.ytimg.com/vi_webp/Qg50N7I1I5c/sddefault.webp" alt="" data-collection="2vzR22ysHj75BM7UGvJt" class="videoSelection">
-                    <img src="https://i.ytimg.com/vi_webp/QQaqP_VI6Zw/sddefault.webp" alt="" data-collection="AtvaInsOWXFYDXLzYLiq" class="videoSelection">
-                    <img src="https://i.ytimg.com/vi_webp/DMf9bpDcZQk/sddefault.webp" alt="" data-collection="qp4GDrbIiIerDIYhFBgo" class="videoSelection">
+                    <img src="https://i.ytimg.com/vi_webp/Ii16it-1cOo/sddefault.webp" alt="" data-document="K2i8X3vlEUQxnDdTLqKj" class="videoSelection">
+                    <img src="https://i.ytimg.com/vi_webp/VUpNpRJ1EXo/sddefault.webp" alt="" data-document="wUBBF2zgCDHE1mAPPGWl" class="videoSelection">
+                    <img src="https://i.ytimg.com/vi_webp/h9Zv_TiVzmg/sddefault.webp" alt="" data-document="GvtshyhbfKUcMwetgPOU" class="videoSelection">
+                    <img src="https://i.ytimg.com/vi_webp/Qg50N7I1I5c/sddefault.webp" alt="" data-document="2vzR22ysHj75BM7UGvJt" class="videoSelection">
+                    <img src="https://i.ytimg.com/vi_webp/QQaqP_VI6Zw/sddefault.webp" alt="" data-document="AtvaInsOWXFYDXLzYLiq" class="videoSelection">
+                    <img src="https://i.ytimg.com/vi_webp/DMf9bpDcZQk/sddefault.webp" alt="" data-document="qp4GDrbIiIerDIYhFBgo" class="videoSelection">
                 </main>
             </div>
         </div>

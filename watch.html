@@ -1,64 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <title>Videos</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-
-<body style="font-family: Press Start 2P" "cursive; sans-serfif">
-
-  <header>
-    <img class="logo" src="./assets/images/esportroast.png"/>
-    <nav class="purple darken-2">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo right"></a>
-            <ul id="nav-mobile">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./watch.html">VIDEO</a></li>
-                <li><a href="./stats.html">STATS</a></li>
-                <li><a href="./links.html">LINKS</a></li>
-                <li><a href="./globalleaders.html">globalLEADERS</a></li>
-            </ul>
-
-            
-        </div>
-        </div>
-    </nav>
-</header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+      
+        <!---javascript function for mini sidenav menu-->
+        <script src="./assets/js/sidenav.js" defer></script>
+      
+        <title>Home</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+      </head>
+      
+      
+      <body style="font-family: Press Start 2P" "cursive; sans-serfif">
+      
+        <header>
+            <a href="./index.html">
+                <img class="logo" src="./assets/images/esportroast.png"/></a>
+          <nav class="purple darken-2" style="padding: 0px 10px;">
+              <div class="nav-wrapper">
+                  <a href="#" class="brand-logo left"></a>
+      
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  </a>
+      
+                  <ul class="hidenav">
+                      <li><a href="./index.html">HOME</a></li>
+                      <li><a href="./watch.html">VIDEO</a></li>
+                      <li><a href="./stats.html">STATS</a></li>
+                      <li><a href="./links.html">LINKS</a></li>
+                      <li><a href="./globalleaders.html">globalLEADERS</a></li>
+                  </ul>
+                
+                </div>
+          </nav>
+      
+          <ul class="sidenav" id="mobile-demo"> <img class="logoside" src="./assets/images/esportroast.png"/>
+      
+                       <li><a href="./index.html">HOME</a></li>
+                      <li><a href="./watch.html">VIDEO</a></li>
+                      <li><a href="./stats.html">STATS</a></li>
+                      <li><a href="./links.html">LINKS</a></li>
+                      <li><a href="./globalleaders.html">globalLEADERS</a></li>
+          </ul>
+      </header>
 
    
    
 
               <main id="mainWatchPage">
                 <!--Video player-->
-                <video id="watchVideo" autoplay muted>
-                    <source src="./assets/vids/27.mp4" type="video/mp4">
-                </video>
+                <div id="watchVideo"> </div>
                 <!--Description-->
                 <section id="description">
                     <div id="topDesc">
                         <h3>Submitted by: {Name}</h3>
                         <span>
-                            <button>Like</button>
-                            <button>Dislike</button>
+                            <button id="flamesButton" data-state="notSelected">Flame</button>
                         </span>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores alias natus, nemo earum esse tenetur id reprehenderit at hic odio tempora facilis eaque, cum itaque sint provident explicabo. Dignissimos, ipsum?</p>
+                    <p id="mainDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores alias natus, nemo earum esse tenetur id reprehenderit at hic odio tempora facilis eaque, cum itaque sint provident explicabo. Dignissimos, ipsum?</p>
                     <span id="bottomDesc">
                       <p>Views: 28</p>
-                      <p>Likes: 8</p>
-                      <p>Dislikes: 2</p>
+                      <p>Flames: 8</p>
                     </span>
                 </section>
 
@@ -76,7 +90,31 @@
                 <p>Website created by Ernesto Garcia, Jesus Perea, Parth Bhatt, and Daniel Stark</p>
             
             </footer>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
 
-    <script src="./assets/js/script.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCgxAMGS6NEheG5qis2ZjUxtkhSs324O-Q",
+    authDomain: "e-sports-roast.firebaseapp.com",
+    projectId: "e-sports-roast",
+    storageBucket: "e-sports-roast.appspot.com",
+    messagingSenderId: "400141272269",
+    appId: "1:400141272269:web:db081bed8def97aab55584",
+    measurementId: "G-ZDLESMJCLT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  //reference the database for future use
+  const db = firebase.firestore();
+  db.settings({ timestampsInSnapshots: true })
+</script>
+    <script src="./assets/js/watch.js"></script>
 </body>
+
 </html>

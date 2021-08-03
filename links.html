@@ -1,144 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  
-    <title>Links</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!---javascript function for mini sidenav menu-->
+  <script src="./assets/js/sidenav.js" defer></script>
+
+  <title>ESportRoast</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    
+
+
+<body style="font-family: Press Start 2P" "cursive; sans-serfif">
+
   <header>
-    <img class="logo" src="./assets/images/esportroast.png"/>
-    <nav class="purple darken-2">
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo right"></a>
-            <ul id="nav-mobile">
-                <li><a href="./index.html">HOME</a></li>
-                <li><a href="./watch.html">VIDEO</a></li>
-                <li><a href="./stats.html">STATS</a></li>
-                <li><a href="./links.html">LINKS</a></li>
-                <li><a href="./globalleaders.html">globalLEADERS</a></li>
-            </ul>
+    <a href="./index.html">
+      <img class="logo" src="./assets/images/esportroast.png"/></a>
+    <nav class="purple darken-2" style="padding: 0px 10px;">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo left"></a>
 
-            
-        </div>
-        </div>
-    </nav>
-</header>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </a>
 
-<img id="linksbanner" src="./Images/linksbanner.jpg">
+        <ul class="hidenav">
+          <li><a href="./index.html">HOME</a></li>
+          <li><a href="./watch.html">VIDEO</a></li>
+          <li><a href="./stats.html">STATS</a></li>
+          <li><a href="./links.html">LINKS</a></li>
+          <li><a href="./globalleaders.html">globalLEADERS</a></li>
+        </ul>
 
-<div class="cardContainer">
-  <div id="cards">
-    <div class="col s12 m4 12">
-      <div class="card">
-        <div class="card-image">
-          <img src="./Images/ESPORTS_2.jpg">
-          
-        </div>
-        <div class="card-content">
-          <a href="https://jw-webmagazine.com/esports-games/"  target="https://jw-webmagazine.com/esports-games/">
-          <div class="pcard">
-            <p class=cardtitle>Top E-Sports Games 2021</p>
-            <p>These are some of the most popular games out right now!</p>
-          </div>
-          </a>
-        </div>
-        <div class="card-action">
-          
-        </div>
       </div>
-    </div>
-  </div>
+    </nav>
 
-  <div id="cards">
-    <div class="col s12 m4 12">
-      <div class="card">
-        <div class="card-image">
-          <img src="./Images/esports-betting.jpg">
+    <ul class="sidenav" id="mobile-demo"> <img class="logoside" src="./assets/images/esportroast.png" />
+
+      <li><a href="./index.html">HOME</a></li>
+      <li><a href="./watch.html">VIDEO</a></li>
+      <li><a href="./stats.html">STATS</a></li>
+      <li><a href="./links.html">LINKS</a></li>
+      <li><a href="./globalleaders.html">globalLEADERS</a></li>
+    </ul>
+  </header>
+
+  <img id="linksbanner" src="./Images/linksbanner.jpg">
+
+  <div class="cardContainer">
+    <div id="cards">
+      <div class="col s12 m4 12">
+        <div class="card">
+          <div class="card-image">
+            <img src="./Images/ESPORTS_2.jpg">
+
           </div>
           <div class="card-content">
-          <a href="http://powerupgaming.co.uk/2021/03/28/what-are-the-top-esports-tournaments-from-around-the-world/"  
-          target="http://powerupgaming.co.uk/2021/03/28/what-are-the-top-esports-tournaments-from-around-the-world/">
-            <div class="pcard">
-            <p class="cardtitle">Biggest Tournaments in E-Sports</p>
-          <p>Top tournaments in the world with the highest prizes awarded.</p>
+            <a href="https://jw-webmagazine.com/esports-games/" target="https://jw-webmagazine.com/esports-games/">
+              <div class="pcard">
+                <p class=cardtitle>Top E-Sports Games 2021</p>
+                <p>These are some of the most popular games out right now!</p>
+              </div>
+            </a>
           </div>
-        </a> 
+          <div class="card-action">
+
+          </div>
         </div>
-        <div class="card-action">
-         </div>
+      </div>
+    </div>
+
+    <div id="cards">
+      <div class="col s12 m4 12">
+        <div class="card">
+          <div class="card-image">
+            <img src="./Images/esports-betting.jpg">
+          </div>
+          <div class="card-content">
+            <a href="http://powerupgaming.co.uk/2021/03/28/what-are-the-top-esports-tournaments-from-around-the-world/"
+              target="http://powerupgaming.co.uk/2021/03/28/what-are-the-top-esports-tournaments-from-around-the-world/">
+              <div class="pcard">
+                <p class="cardtitle">Biggest Tournaments in E-Sports</p>
+                <p>Top tournaments in the world with the highest prizes awarded.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-action">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cards">
+      <div class="col s12 m4 12">
+        <div class="card">
+          <div class="card-image">
+            <img src="./Images/Globalgamesmarket.png">
+          </div>
+          <div class="card-content">
+            <a href="https://newzoo.com/insights/articles/global-games-market-to-generate-175-8-billion-in-2021-despite-a-slight-decline-the-market-is-on-track-to-surpass-200-billion-in-2023/"
+              target="https://newzoo.com/insights/articles/global-games-market-to-generate-175-8-billion-in-2021-despite-a-slight-decline-the-market-is-on-track-to-surpass-200-billion-in-2023/">
+              <div class="pcard">
+                <p class="cardtitle">Most Popular Devices for Gaming</p>
+                <p>This figure shows what percentage of gamers use respective devices or gaming consoles.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-action">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cards">
+      <div class="col s12 m4 12">
+        <div class="card">
+          <div class="card-image">
+            <img src="./Images/Mostcompetitive.jpg">
+          </div>
+          <div class="card-content">
+            <a href="https://www.gamingscan.com/best-competitive-games/"
+              target="https://www.gamingscan.com/best-competitive-games/">
+              <div class="pcard">
+                <p class="cardtitle">Get your competitive spirit on!</p>
+                <p>Find out what games interest you the most by seeing what gives similar competitors their biggest
+                  edge!</p>
+              </div>
+            </a>
+          </div>
+          <div class="card-action">
+
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <div id="cards">
-    <div class="col s12 m4 12">
-      <div class="card">
-        <div class="card-image">
-          <img src="./Images/Globalgamesmarket.png">
-          </div>
-        <div class="card-content">
-          <a href="https://newzoo.com/insights/articles/global-games-market-to-generate-175-8-billion-in-2021-despite-a-slight-decline-the-market-is-on-track-to-surpass-200-billion-in-2023/" 
-          target="https://newzoo.com/insights/articles/global-games-market-to-generate-175-8-billion-in-2021-despite-a-slight-decline-the-market-is-on-track-to-surpass-200-billion-in-2023/">
-          <div class="pcard">
-            <p class="cardtitle">Most Popular Devices for Gaming</p>
-          <p>This figure shows what percentage of gamers use respective devices or gaming consoles.</p>
-        </div>
-        </a>
-        </div>
-        <div class="card-action">
-      </div>
-      </div>
-    </div>
-  </div>
 
-  <div id="cards" >
-    <div class="col s12 m4 12">
-      <div class="card">
-        <div class="card-image">
-          <img src="./Images/Mostcompetitive.jpg">
-          </div>
-        <div class="card-content">
-           <a href="https://www.gamingscan.com/best-competitive-games/"  target="https://www.gamingscan.com/best-competitive-games/">
-          <div class="pcard">
-            <p class="cardtitle">Get your competitive spirit on!</p>
-          <p>Find out what games interest you the most by seeing what gives similar competitors their biggest edge!</p>
-        </div>
-        </a>
-        </div>
-        <div class="card-action">
-         
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <footer>
+    <ul id="footerNav">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./watch.html">Video</a></li>
+      <li><a href="./stats.html">Stats</a></li>
+      <li><a href="./links.html">Links</a></li>
+      <li><a href="./globalleaders.html">GlobalLeaders </a></li>
+    </ul>
 
+    <p>Website created by Ernesto Garcia, Jesus Perea, Parth Bhatt, and Daniel Stark</p>
 
-    <footer>
-        <ul id="footerNav">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./watch.html">Video</a></li>
-            <li><a href="./stats.html">Stats</a></li>
-            <li><a href="./links.html">Links</a></li>
-            <li><a href="./globalleaders.html">GlobalLeaders </a></li>
-        </ul>
-    
-        <p>Website created by Ernesto Garcia, Jesus Perea, Parth Bhatt, and Daniel Stark</p>
-    
-    </footer>
+  </footer>
 
 </body>
+
 </html>

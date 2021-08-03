@@ -1,30 +1,43 @@
-*,* {
+* {
   margin: 0px;
   padding: 0px;
 
 }
 
-body {
+html, body {
     background-color: rgb(5, 5, 5);
     color: ghostwhite;
     font-family: 'Press Start 2P', cursive;    
     font-size: medium;
     /* font-family: 'Press Start 2P', cursive;     */
-    font-size: large;
+    font-size: small;
+    overflow-x: hidden;
 }
+
 p {
     color: black;
 }
 
-ul {
-    display: flex;
-    justify-content: space-around;
+
+
+.logoside {
+    width: 400px;
+    height: 200px;
+    background-color: black;
+    align-content: center;
+    justify-items: center;
+    padding-right: 100px;
+}
+
+.sidenav {
+    font-size: small;
 }
 
 .pcard:hover {
     text-shadow: 0px 0px 6px rgb(147, 59, 230);
 }
 
+/* --------*/
 .logo {
     width: 528px;
     height: 270px;
@@ -41,6 +54,7 @@ ul {
      align-content: center;
      align-items: center;
  }
+
 .navtop {
   overflow: hidden;
   background-color: ghostwhite;
@@ -66,7 +80,7 @@ main {
 }
 
 
-
+/* -------- */
 .outterbox {
     display: flex;
     flex-direction:row;
@@ -91,25 +105,29 @@ footer {
     flex-direction: column;
     align-items: center;
     border: blueviolet;
-    border-width: 10px;
+    border-width: 25px;
+    height: 100px;
+    width: 100%;
     background-color: blueviolet;
 }
 
-
-
+/* video grid on the homepage */
 .videoSelection {
     margin:40px;
     cursor: pointer;
     width: 360px;
     height: 260px;
+    border: blueviolet;
+    border-style: solid;
+    border-width: 5px;
 }
 
 .videoSelection:hover {
     box-shadow: 0px 0px 10px 10px rgb(210, 32, 255);
     cursor: pointer;
     transition: 1s;
-    width: 400px;
-    height: 325px;
+    width: 375px;
+    height: 275px;
     transition-duration: 1s;
 }
 
@@ -118,6 +136,8 @@ footer {
     margin-top: auto;
 }
 
+
+/* All containers */
 .container {
     display: flex;
     justify-items: center;
@@ -126,12 +146,12 @@ footer {
 
 .profile {
     display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
     align-content: center;
 }
 
+
+/* all images */
 img.responsive-img {
     max-width: 100%;
     height: auto;
@@ -143,6 +163,8 @@ img.responsive-img {
     transition: 1s;
 }
 
+
+/* Stats page top banner */
 .statspic {
     display: flex;
     justify-content: left;
@@ -154,6 +176,7 @@ img.responsive-img {
     padding: 10px;
 }
 
+/* Descriptions on the stats  page */
 .descright {
    position: relative;
    left: 444px;
@@ -175,21 +198,40 @@ img.responsive-img {
 
 /*Watch page style*/
 #watchVideo {
-    width: 1280px;
-    height: 720px;
+    width: 1290px;
+    height: 730px;
     margin-top: 50px;
+    margin-bottom: 20px;
+    border: blueviolet;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#watchVideo:hover {
+    box-shadow: 0px 0px 10px 10px rgb(210 32 255);
+    cursor: pointer;
+    transition: 1s;
+    width: 1290px;
+    height: 730px;
+    transition-duration: 1s;
 }
 
 #mainWatchPage {
     display: flex;
+    justify-items: center;
     flex-direction: column;
     align-items: center;
 }
 
 #description {
-    width: 1280px;
+    width: 800px;
     background-color: white;
     color: black;
+    margin-bottom: 25px;
+    border: blueviolet;
+    border-style: solid;
+    border-width: 5px;
+    padding: 10px;
 }
 
 #topDesc {
@@ -199,25 +241,29 @@ img.responsive-img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-size: 35px;
 }
 
-@media screen and (max-width: 800px) {
-    .descright {
-        position: relative;
-        left: 40px;
-        top: 9px;
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center; 
-        color: white;       
+#mainDescription {
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width: 993px) {
+    .hidenav {
+        display: none;
     }
+
 }
 
-
-
+@media screen and (max-width: 412px) {
+    .logo {
+        width: 100%;
+        height: auto;
+    }
+    
+}
 
 #bottomDesc {
     display: flex;
@@ -229,7 +275,7 @@ img.responsive-img {
 
 /*Links page*/
 
- #linksbanner {
+#linksbanner {
      width: 100%;
  }
 
@@ -258,6 +304,8 @@ img.responsive-img {
  a {
      color: white;
  }
+
+ /* Descrioption on the home page under the banner */
 
  .description {
      display: flex;
@@ -295,3 +343,18 @@ img.responsive-img {
 .usernames {
     color: white;
 }
+ @media screen and (max-width: 885px) {
+     .descright {
+        position: relative;
+        left: -15px;
+        top: 23px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        color: white;
+        margin-bottom: 10%;
+     }
+ }
