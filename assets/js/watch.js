@@ -23,7 +23,6 @@ var docRef = db.collection("Videos").doc(documentFromUrl);
 //promise to call data from document
 docRef.get().then(function(doc) {
   if (doc.exists) {
-    console.log("Document data:", doc.data());
     //setting viewsvar
     viewsVar = doc.data().Views
     //itterating views
@@ -33,7 +32,7 @@ docRef.get().then(function(doc) {
       Views: viewsVar
     })
     //updating viewsEl
-    viewsLikesEl[0].textContent = "Likes: " + viewsVar
+    viewsLikesEl[0].textContent = "Views: " + viewsVar
     //set video url
     videoPlayerEl.innerHTML = doc.data().Url
     //set description
