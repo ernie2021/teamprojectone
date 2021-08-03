@@ -33,7 +33,7 @@ docRef.get().then(function(doc) {
       Views: viewsVar
     })
     //updating viewsEl
-    viewsLikesEl[0].textContent = "Likes: " + viewsVar
+    viewsLikesEl[0].textContent = "Views: " + viewsVar
     //set video url
     videoPlayerEl.innerHTML = doc.data().Url
     //set description
