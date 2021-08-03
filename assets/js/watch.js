@@ -23,7 +23,6 @@ var docRef = db.collection("Videos").doc(documentFromUrl);
 //promise to call data from document
 docRef.get().then(function(doc) {
   if (doc.exists) {
-    console.log("Document data:", doc.data());
     //setting viewsvar
     viewsVar = doc.data().Views
     //itterating views
