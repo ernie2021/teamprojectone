@@ -6,7 +6,7 @@ var mainDescriptionEl = document.querySelector("#mainDescription")
 //selecting the views and flames
 var viewsLikesEl = document.querySelector("#bottomDesc").children
 //selecting the top description
-var topDescriptionEl = document.querySelector("#topDesc")
+var topDescriptionEl = document.querySelector("#topDescript")
 //variable for likes
 var flamesVar = 0;
 //variable for views
@@ -42,7 +42,7 @@ docRef.get().then(function(doc) {
     //set flames
     viewsLikesEl[1].textContent = "Flames: " + flamesVar
     //set user
-    topDescriptionEl.querySelector("h3").textContent = "Submitted by: " + doc.data().User
+    topDescriptionEl.querySelector("#submittext").textContent = "Submitted by: " + doc.data().User
   } else {
     console.log("No such document!");
   }
