@@ -39,8 +39,8 @@ p {
 
 /* --------*/
 .logo {
-    width: 528px;
-    height: 270px;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,21 +198,22 @@ img.responsive-img {
 
 /*Watch page style*/
 #watchVideo {
-    width: 1290px;
-    height: 730px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    display: flex;
+    width: 80%;
+  height: 10%;
     border: blueviolet;
     border-style: solid;
     border-width: 5px;
+    margin: 30px;
 }
 
 #watchVideo:hover {
     box-shadow: 0px 0px 10px 10px rgb(210 32 255);
     cursor: pointer;
     transition: 1s;
-    width: 1290px;
-    height: 730px;
+    
+    
+    
     transition-duration: 1s;
 }
 
@@ -222,8 +223,23 @@ img.responsive-img {
     flex-direction: column;
     align-items: center;
 }
+#mainDescription {
+    color: white;
+}
+
+.viewsnflames {
+    color: white;
+}
 
 #description {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 80%;
+    background-color: black;
+    color: white;
     width: 1280px;
     background-color: white;
     color: black;
@@ -232,15 +248,37 @@ img.responsive-img {
     border-style: solid;
     border-width: 5px;
     padding: 10px;
+   
 }
 
-#topDesc {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.flame {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+#flamesButton {
+    background: black;
+    color: yellow;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px;
+    width: 100px;
+    margin: 20px;
+    
+}
+#flamesButton:hover {
+    box-shadow: 0px 0px 5px 5px gold;
+    transition: 300ms;
+}
+
+
+
+#topDescript {
+  display: flex;
+  align-items: flex-end;
+  flex-direction:row;
     font-size: 35px;
 }
 
@@ -248,7 +286,10 @@ img.responsive-img {
     font-size: 20px;
 }
 
-
+#submittext {
+    color: gold;
+    font-size: 40px;
+}
 
 @media screen and (max-width: 993px) {
     .hidenav {
@@ -262,14 +303,41 @@ img.responsive-img {
         width: 100%;
         height: auto;
     }
-    
+    #description {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+        background-color: black;
+        color: white;
+        margin-bottom: 25px;
+        border: blueviolet;
+        border-style: solid;
+        border-width: 5px;
+        padding: 10px;
+       
+    }
+
+     #topDescript {
+        display: flex;
+        align-items: flex-start;
+        flex-direction:column;
+          font-size: 25px;
+      } 
+#submittext {
+    font-size: 25px;
 }
 
-#bottomDesc {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-} #bottomDesc>* {
+
+
+
+}
+
+
+   
+ #bottomDesc>* {
     padding: 0 5px;
 }
 
@@ -344,17 +412,90 @@ img.responsive-img {
     color: white;
 }
  @media screen and (max-width: 885px) {
-     .descright {
-        position: relative;
-        left: -15px;
-        top: 23px;
+    #description {
         display: flex;
-        justify-items: center;
-        align-items: center;
+        flex-wrap: wrap;
         flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
+        justify-content: center;
+        align-items: flex-end;
+        width: 80%;
+        background-color: black;
         color: white;
-        margin-bottom: 10%;
-     }
+        margin-bottom: 25px;
+        border: blueviolet;
+        border-style: solid;
+        border-width: 5px;
+        padding: 10px;
+       
+    }
+
+     #topDescript {
+        display: flex;
+        align-items: center;
+        flex-direction:column;
+          font-size: 25px;
+      }
+
+      #submittext {
+        color: gold;
+        font-size: 30px;
+    }
+    }
+
+     
+
+
+
+@media screen and (max-width: 500px) {
+   
+    #description {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+        background-color: black;
+        color: white;
+        margin-bottom: 25px;
+        border: blueviolet;
+        border-style: solid;
+        border-width: 5px;
+        padding: 10px;
+       
+    }
+
+    #submittext {
+        color: gold;
+        font-size: 25px;
+    }
+
+    #topDescript {
+        display: flex;
+        align-items: flex-start;
+        flex-direction:column;
+          font-size: 25px;
+      }
+    
+    .descright1 {
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+ .boxone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: normal;
+    text-align: center;
  }
+
+ #topDesc {
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+      font-size: 10px;
+      padding: 10px;
+  }
+}
