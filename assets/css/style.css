@@ -499,3 +499,19 @@ img.responsive-img {
       padding: 10px;
   }
 }
+
+@media screen and (max-width: 600px) {
+    .descright {
+    position: relative;
+    left: -2px;
+    top: 12px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    color: white;
+}
+    
+}
