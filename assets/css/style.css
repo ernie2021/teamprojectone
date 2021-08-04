@@ -240,6 +240,9 @@ img.responsive-img {
     width: 80%;
     background-color: black;
     color: white;
+    width: 1280px;
+    background-color: white;
+    color: black;
     margin-bottom: 25px;
     border: blueviolet;
     border-style: solid;
@@ -496,5 +499,3 @@ img.responsive-img {
       padding: 10px;
   }
 }
-
-
