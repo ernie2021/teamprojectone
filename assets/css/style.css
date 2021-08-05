@@ -139,6 +139,8 @@ footer {
 /*Global Leaders Style*/
 
 .profile {
+    position: relative;
+    padding-right: 300px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -178,7 +180,6 @@ img.responsive-img {
    top: -244px;
    display: flex;
    justify-items: center;
-   align-items: center;
    flex-direction: column;
    flex-wrap: nowrap;
    align-content: center;
@@ -473,8 +474,8 @@ a {
 @media screen and (max-width: 600px) {
     .descright {
     position: relative;
-    left: -2px;
-    top: 12px;
+    left: -140px;
+    top: 11px;
     display: flex;
     justify-items: center;
     align-items: center;
